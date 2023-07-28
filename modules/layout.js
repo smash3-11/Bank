@@ -46,7 +46,7 @@ function header(place) {
 
 
     headers.append(my_action, email)
-    my_action.append(home_a, wallet_a, transactions_a, )
+    my_action.append(home_a, wallet_a, transactions_a, replenishment )
     email.append(email_a, icon)
     place.append(headers)
 

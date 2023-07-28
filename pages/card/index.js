@@ -59,7 +59,7 @@ convertBtn.onclick = async () => {
 		console.log(res.data.success);
 		if(res.data.success) {
 			if (res.status === 200 || res.status === 201) {
-				convertView.innerHTML = Number(res.data.result).toLocaleString('uz-UZ')
+				convertView.innerHTML = `${Number(res.data.result).toLocaleString('uz-UZ')} сум`
 			}
 		} else {
 			convertView.innerHTML = res?.data?.error?.info
