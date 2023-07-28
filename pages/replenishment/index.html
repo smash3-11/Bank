@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/style.scss">
+	<script async src="/modules/poilce.js"></script>
+    <title>Пополнение баланса</title>
+</head>
+<body>
+
+    <div class="container">
+		<a class="back" href="/">
+			<img src="/public/back.svg" alt="back">
+		</a>
+		<h1>Пополнение баланса</h1>
+		<form name="replenishment" action="#">
+			<select name="wallet" id="wallet" list="wallet-list">
+				<option value="" disabled hidden selected> Выберите карту</option>
+			</select>
+			<p class="balance-card"> Balance card: </p>
+			<input required name="total" placeholder="Сумма" type="number">
+			<!-- <p class="warning" id="total-warning"></p> -->
+			<button type="submit">Добавить</button>
+		</form>
+        </div>
+        <script type = "modules" src="/pages/replenishment/index.js"></script>
+    
+</body>
+</html>
